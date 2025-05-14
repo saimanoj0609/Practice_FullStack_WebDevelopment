@@ -1,0 +1,38 @@
+.background-container {
+  background-image: url("/Static_WebDev_Exercises/Exercise1/img_store/delta.png");
+  background-size: cover;
+  padding: 10px;
+}
+
+.favourite-places-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.favourite-place-card-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 15px;
+}
+
+.favourite-place-card-heading {
+  color: #0f0e46;
+  font-family: "Roboto";
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.favourite-place-card-description {
+  color: #6c6b70;
+  font-family: "Roboto";
+  font-size: 13px;
+}
+
+.favourite-place-card-image {
+  width: 80px;
+  height: 100px;
+}
