@@ -13,5 +13,5 @@ Exercise - 2
 
 Exercise - 3
 1. This Exercise is specific to DevOps guide and interview Prep
-2. It covers all the above topics including hyperlinks, onclickDisplay etc..
-3. It is like a semi-responsive website
+2. It covers all the above topics including hyperlinks, onclickDisplay, ol, ul etc..
+3. It is like a semi-responsive website without manual grid control
