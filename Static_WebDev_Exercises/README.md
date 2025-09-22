@@ -15,3 +15,8 @@ Exercise - 3
 1. This Exercise is specific to DevOps guide and interview Prep
 2. It covers all the above topics including hyperlinks, onclick-display, ol, ul etc..
 3. It is like a semi-responsive website without manual grid control
+
+Exercise - 4
+1. This Exercise is about guessing game website
+2. In this exercise we will cover basics of HTML, CSS, Bootstrap and JS
+3. We can improve more features in future
