@@ -1,0 +1,53 @@
+let gameResult = document.getElementById("gameResult");
+let userInput = document.getElementById("userInput");
+let randomNumber = Math.ceil(Math.random() * 100);
+let checkButton = document.getElementById('checkGuess');
+let timer = document.getElementById('gametimer');
+let number_of_chances = 1;
+
+checkButton.addEventListener('click', function() {
+    number_of_chances++; // Increment the counter on each click
+    let guessedNumber = parseInt(userInput.value);
+    let isButtonDisabled = false;
+    if (isButtonDisabled) {
+        return;
+    }
+    checkButton.disabled = true;
+    isButtonDisabled = true;
+    checkButton.textContent = 'Please wait...';
+    setTimeout(function() {
+        checkButton.disabled = false;
+        isButtonDisabled = false;
+        checkButton.textContent = 'Guess Me';
+        timer.textContent = '';
+    }, 3000); // 3000 milliseconds = 3 seconds
+
+    if (number_of_chances < 10){
+        if (guessedNumber > randomNumber) {
+            gameResult.textContent = "Too High! Try Again.";
+            gameResult.style.backgroundColor = "#1e217c";
+        }
+        else if (guessedNumber < randomNumber) {
+            gameResult.textContent = "Too Low! Try Again.";
+            gameResult.style.backgroundColor = "#1e217c";
+        }
+        else if (guessedNumber === randomNumber) {
+            gameResult.textContent = "Congratulations! You got it right in " + number_of_chances.toString() + " chances.";
+            gameResult.style.backgroundColor = "green";
+        }
+        else {
+            gameResult.textContent = "Please provide a valid input.";
+            gameResult.style.backgroundColor = "#1e217c";
+        }
+        userInput.value = '';
+    }
+    else{
+        gameResult.textContent = "Your out of chances, Try after sometime.";
+        gameResult.style.backgroundColor = "#e88c6dff";
+        setTimeout(function() {
+        checkButton.disabled = false;
+        isButtonDisabled = false;
+        checkButton.textContent = 'Guess Me';
+        }, 30000); // 30000 milliseconds = 30 seconds
+    }
+  });
